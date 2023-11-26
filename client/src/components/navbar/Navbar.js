@@ -23,7 +23,7 @@ const NavBar = () => {
         <Container fluid>
 
           <Navbar.Brand as={Link} to='/'> <h1 className="brandTitle"> CODE WIZARD </h1> </Navbar.Brand>
-          <Navbar.Toggle />
+          <Navbar.Toggle style={{ backgroundColor: '#cc333c' }} />
           <Navbar.Collapse id='navbar'>
             <Nav className='ml-auto'>
 

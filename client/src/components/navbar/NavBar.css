@@ -7,7 +7,6 @@
     background-color: var(--background);
   }
   
-  
   .NavBar {
     border-bottom: solid;
     background-color: transparent;
@@ -41,8 +40,6 @@
     color: var(--background);
   }
 
-
-  
   h1 {
     font-family: 'Libre Baskerville', serif;
     /* font-size: 60px; */
@@ -61,8 +58,6 @@
   .logoutButton {
   background: none; 
   border: none; 
-  
-  
   }
 
 btn-primary:hover {
@@ -71,3 +66,20 @@ btn-primary:hover {
   border: none;
   }
 
+@media (max-width: 768px) {
+  .NavBar {
+    padding: 1rem 0;
+  }
+  
+  .brandTitle {
+    font-size: 2rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    display: block;
+  }
+}

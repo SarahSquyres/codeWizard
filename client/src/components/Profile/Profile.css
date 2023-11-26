@@ -6,16 +6,21 @@
 }
 
 .row {
-  display: flex; 
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding: 4rem 0 0 0;
-  height: 65vh;
+  align-items: center;
   
 }
 
 
 .profileCard {
   margin: 0 0 0 0; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 0px 30px;
 }
 
 .card-body {
@@ -85,20 +90,23 @@ a {
   color: var(--font) !important;
 }
 
-
 .profileIcon {
   border: 3px solid;
 }
 
 .deleteContainer {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .btn-secondary {
   border-radius: .3rem;
   width: 10rem;
   height: 3rem;
+  
 }
 
 .type { 
@@ -106,5 +114,37 @@ a {
   padding: .5rem;
 }
 
+@media (max-width: 768px) {
+  .Banner {
+    font-size: 3rem;
+  }
+  
+  .row {
+    padding: 2rem 0 0 0;
+  }
+  
+  .list-group-item {
+    font-size: 1.2rem;
+  }
+  
+  .btn-primary {
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+  }
+  
+  .btn-secondary {
+    width: 8rem;
+    height: 4rem;
+  }
 
+  .profileIcon {
+    border: 2px solid;
+    width: 10rem;
+    height: 10rem;
+    margin: auto;
+  }
 
+  .profileCard {
+    align-items: center;
+  }
+  
+}

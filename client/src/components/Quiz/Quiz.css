@@ -4,7 +4,7 @@
     width: auto;
     padding: 0 30px;
     height: 70vh;
-    margin-bottom: 100px;
+    margin-bottom: 10rem;
 }
 
 .quiz {
@@ -49,6 +49,7 @@ button {
     border-radius: 8px;
     background-color: var(--font);
     padding: 5px 5px;
+    color: rgb(244, 240, 240);
 }
 
 .result-section {
@@ -103,7 +104,52 @@ button {
   margin: auto auto auto auto;
   width: 25rem;
 }
+  
+  @media screen and (max-width: 2000px) {
+    .column {
+      padding: 2rem 1rem 0 0;
+    }
+  
+    .welcomeTitle {
+      font-size: 1.8rem;
+    }
+  
+    .welcomeType {
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  
+    .heroImage {
+      width: 15rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .column {
+      padding: 2rem 0 0 0;
+    }
+  
+    .welcomeTitle {
+      font-size: 1.5rem;
+    }
+  
+    .welcomeType {
+      font-size: 0.8rem;
+      line-height: 16px;
+    }
+  
+    .heroImage {
+      width: 10rem;
+    }
+    
+    li {
+      font-size: 10px;
+      padding: 3px;
+      margin: 3px;
+      word-wrap: break-word;
+    }
 
-/* .btn-primary {
-  padding: 0 0 1rem 0;
-} */
+    h3 {
+      font-size: 14px;
+    }
+  }
