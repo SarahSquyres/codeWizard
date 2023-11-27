@@ -101,7 +101,7 @@ const Quiz = () => {
                     </div>
                 </div>
             ) : (
-                <div className='row'>
+                <div className='welcome'>
                     <div className='column'>
                         <h1 className='welcomeTitle'>{'WELCOME TO \nCODE WIZARD'}</h1>
                         <h1 className='welcomeType'>

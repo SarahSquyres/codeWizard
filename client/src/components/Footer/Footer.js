@@ -16,7 +16,7 @@ function Footer() {
                     </svg>
                 </a>
             </div>
-            <p>&copy;2023 React Quiz App</p>
+            <p>&copy;2023 Code Wizard</p>
         </footer>
     )
 }

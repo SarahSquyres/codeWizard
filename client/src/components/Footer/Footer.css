@@ -30,11 +30,39 @@ footer p {
   font-size: .9rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1025px) {
   footer {
     flex-direction: column;
     align-items: center;
-    
+    margin-top:40rem;
+  }
+  
+  footer svg {
+    margin: 0.5rem;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer {
+    margin-top:40rem;
+  }
+}
+
+@media screen and (max-width: 821px) {
+  footer {
+    margin-top:30rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    margin-top:20rem;
   }
   
   .social-container {

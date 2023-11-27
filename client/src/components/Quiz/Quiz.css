@@ -3,7 +3,7 @@
     justify-content: center;
     width: auto;
     padding: 0 30px;
-    height: 100vh;
+    height: 30rem;
     margin-bottom: 10rem;
     position: relative;
 }
@@ -48,11 +48,17 @@ li {
 
 button {
     border-radius: 8px;
+    border: none;
     background-color: var(--font);
     padding: 5px 5px;
     color: rgb(244, 240, 240);
 }
 
+
+button:hover {
+  color: white;
+  background-color: #4F9D69;
+  }
 
 .results {
     display: flex;
@@ -63,6 +69,7 @@ button {
     background-color: white;
     border: #cc333c solid 2px;
     padding: 8px 5px 5px 5px;
+    margin-top: 2rem
 }
 
 .homepageCard {
@@ -73,6 +80,7 @@ button {
 
 .column {
   padding: 2rem 5rem 0 0;
+  margin-top: 5rem;
 }
 
 .welcomeTitle {
@@ -100,8 +108,17 @@ button {
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  margin: auto auto auto auto;
+  margin: 5rem auto auto auto;
   width: 25rem;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin: 1rem;
 }
   
   @media screen and (max-width: 1050px) {
@@ -123,11 +140,17 @@ button {
     }
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .quizCard {
       margin-bottom: 5rem;
+      height: 20rem;
     }
     
+    .welcome {
+      flex-direction: column;
+      margin-top: 10rem;
+    }
+
     .column {
       padding: 0 0 0 0;
     }
@@ -161,5 +184,12 @@ button {
     .results {
       font-size: 14px;
       padding: 5px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .welcome {
+      flex-direction: column;
+      margin-top: 15rem;
     }
   }
