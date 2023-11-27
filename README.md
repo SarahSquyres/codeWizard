@@ -2,9 +2,9 @@
 
   [![GitHub License](https://img.shields.io/badge/license-MIT-yellow.svg)](https://opensource.org/licenses/)
 
-### **_[LINK TO DEPLOYED SITE](https://codewizard-5cb0dd220207.herokuapp.com/)_**
+### **_[Code Wizard App Link](https://github.com/SarahSquyres/codeWizard)_**
 
-### **[Code Wizard GitHub](https://github.com/bramirez09/quizapp)**
+### **[Code Wizard GitHub](https://github.com/SarahSquyres/codeWizard)**
 
 ## Table of Contents
 
