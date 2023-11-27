@@ -12,7 +12,7 @@ const Quiz = () => {
     const { loading, data, error } = useQuery(QUERY_QUIZ);
     const { load, userData, err } = useQuery(username ? QUERY_USER : QUERY_ME, {
         variables: { username: username },
-      });
+    });
     const quizzes = data?.quizzes || [];
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -36,22 +36,22 @@ const Quiz = () => {
     const handleNextQuestion = async () => {
         if (currentQuestion === quizzes.length - 1) {
 
-          setIsQuizComplete(true);
+            setIsQuizComplete(true);
 
-          console.log("quiz is set to complete");
-          setIsButtonDisabled(true);
+            console.log("quiz is set to complete");
+            setIsButtonDisabled(true);
         }
-      
+
         if (currentQuestion < quizzes.length - 1) {
-          setCurrentQuestion(currentQuestion + 1);
+            setCurrentQuestion(currentQuestion + 1);
         }
-      
+
         setSelectedAnswer(null);
         setResult(answer ? result + 1 : result);
         localStorage.setItem("scores", JSON.stringify(result + 1));
 
-      };
-      
+    };
+
 
     const handleAnswerSelection = (answer, answerIndex) => {
         setSelectedAnswer(answerIndex);
@@ -96,23 +96,29 @@ const Quiz = () => {
                                 </div>
                                 <Link className="btn btn-primary" to="/me">View Profile</Link>
                             </div>
-                            
+
                         )}
                     </div>
                 </div>
             ) : (
-            <div className='row'>
-                <div className='column'>
-                  <h1 className='welcomeTitle'>{'WELCOME TO \nCODE WIZARD'}</h1>
-                  <h1 className='welcomeType'>
-                    {'\nAre you eager to master the art of coding?\nLook no further!\nCode Wizard is a quiz app to help start\nyou off on your coding journey\nor refresh your skills as a seasoned coder.' }
-                  </h1>
+                <div className='row'>
+                    <div className='column'>
+                        <h1 className='welcomeTitle'>{'WELCOME TO \nCODE WIZARD'}</h1>
+                        <h1 className='welcomeType'>
+                            {'\nAre you eager to master the art of coding?'}
+                            <br />
+                            <br />
+                            {'Code Wizard is a quiz app to help start you off on your coding journey or refresh your skills as a seasoned coder.'}
+                            <br />
+                            <br />
+                            {'Login or Sign Up to take the quiz!'}
+                        </h1>
+                    </div>
+
+                    <img className="heroImage" src={require('../../assets/Frogboy2.png')} alt="lilGuy"></img>
+
                 </div>
-                
-                <img className="heroImage" src={require('../../assets/Frogboy2.png')} alt="lilGuy"></img>
-                
-            </div>
-          )
+            )
             }
         </div>
     );

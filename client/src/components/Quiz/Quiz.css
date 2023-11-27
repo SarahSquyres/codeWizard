@@ -3,8 +3,9 @@
     justify-content: center;
     width: auto;
     padding: 0 30px;
-    height: 70vh;
+    height: 100vh;
     margin-bottom: 10rem;
+    position: relative;
 }
 
 .quiz {
@@ -52,14 +53,13 @@ button {
     color: rgb(244, 240, 240);
 }
 
-.result-section {
-    display: flex;
-    justify-content: center;
-}
 
 .results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    padding: 5px 0px 0px 0px;
     background-color: white;
     border: #cc333c solid 2px;
     padding: 8px 5px 5px 5px;
@@ -72,7 +72,6 @@ button {
 }
 
 .column {
-  /* height: 20%; */
   padding: 2rem 5rem 0 0;
 }
 
@@ -105,7 +104,7 @@ button {
   width: 25rem;
 }
   
-  @media screen and (max-width: 2000px) {
+  @media screen and (max-width: 1050px) {
     .column {
       padding: 2rem 1rem 0 0;
     }
@@ -120,13 +119,17 @@ button {
     }
   
     .heroImage {
-      width: 15rem;
+      width: 25rem;
     }
   }
   
   @media screen and (max-width: 768px) {
+    .quizCard {
+      margin-bottom: 5rem;
+    }
+    
     .column {
-      padding: 2rem 0 0 0;
+      padding: 0 0 0 0;
     }
   
     .welcomeTitle {
@@ -139,7 +142,9 @@ button {
     }
   
     .heroImage {
-      width: 10rem;
+      width: 15rem;
+      margin-top: 6rem;
+      
     }
     
     li {
@@ -151,5 +156,10 @@ button {
 
     h3 {
       font-size: 14px;
+    }
+
+    .results {
+      font-size: 14px;
+      padding: 5px;
     }
   }

@@ -10,7 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+  flex-wrap: nowrap
 }
 
 
@@ -71,7 +71,7 @@ a {
   color: white;
   background-color: var(--font);
   border: none;
-  padding: 1rem 2rem 1rem 2rem 
+  
 }
 
 .retakeType {
@@ -91,7 +91,7 @@ a {
 }
 
 .profileIcon {
-  border: 3px solid;
+  border-radius: 5px;
 }
 
 .deleteContainer {
@@ -116,7 +116,7 @@ a {
 
 @media (max-width: 768px) {
   .Banner {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .row {
